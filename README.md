@@ -10,7 +10,7 @@
 - 05.Queens_Models.ipynb - Modeling for Queens (WORK IN PROGRESS)
 
 ## Background:
-Uber arrived in New York City in 2012 and since then, there has been massive decrease in riderships. The problem has persisted and has grown worse exponentially. In 2012, the daily riderships were roughly 500,000 trips per day. By 2019, on average there are about 230,000 rides a day. That is more than half in seven years! (source([Taxi News](https://www.nydailynews.com/new-york/ny-medallion-foreclosures-taxi-bailout-plan-uber-lyft-20200130-s2mjkhjubzgptdxasoxddwdote-story.html "news source")). Unlike its competitors (uber/lyft), taxi drivers do not have access to "hot zone" locations via their phones as they do not have a "yellow cab app" separately for such luxury. What this project will be forecasting is the number of riderships in the future by different boroughs to determine where and when the pickups will be most needed. Another thing to note is that the lockdown in NYC started in March 22, 2020. As this was an unexpected event, we will see how the lockdown has impacted the number of riderships in 2020. 
+Uber arrived in New York City in 2012 and since then, there has been massive decrease in riderships. The problem has persisted and has grown worse exponentially. In 2012, the daily riderships were roughly 500,000 trips per day. By 2019, on average there are about 230,000 rides a day. That is more than half in seven years! [Taxi News](https://www.nydailynews.com/new-york/ny-medallion-foreclosures-taxi-bailout-plan-uber-lyft-20200130-s2mjkhjubzgptdxasoxddwdote-story.html "news source"). Unlike its competitors (uber/lyft), taxi drivers do not have access to "hot zone" locations via their phones as they do not have a "yellow cab app" separately for such luxury. What this project will be forecasting is the number of riderships in the future by different boroughs to determine where and when the pickups will be most needed. Another thing to note is that the lockdown in NYC started in March 22, 2020. As this was an unexpected event, we will see how the lockdown has impacted the number of riderships in 2020. 
 <img src="./images/nyc_distribution.png">
 As you can see on the graph, there was a huge drop in March and that happened due to the lockdown in New York City.
 
@@ -28,14 +28,13 @@ It consists of...
 - Resample the data so that it is in hourly interval
 - Increment count for each interval
 
-![ScreenShot](/images/distribution_boroughs_bar.png)
-<img src="./images/distribution_boroughs_bar.png">
+<img alt="boroughs dist" src="./images/distribution_boroughs_bar.png">
 - Due to different boroughs, pre-lockdown and post-lockdown, for this project, I will forecast Manhattan for now as most of the riderships come from Manhattan. 
 
 ## Exploratory Data Analysis:
 
 #### Weekly Distribution (January):
-<img src="./images/weekly_distribution.png">
+<img alt="boroughs dist" src="./images/weekly_distribution.png">
 
 
 

@@ -71,4 +71,7 @@ One of the first model I had made was a Naive Forecast Baseline Model which uses
 
 
 
+#### Recommendation:
+- Due to pandemic, taxi industry has fallen greatly. 
+
 

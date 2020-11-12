@@ -48,17 +48,25 @@ It consists of...
 
 ## Modeling
 ### Baseline Model:
-One of the first model I had made was a Naive Forecast Baseline Model which uses the last value of my training set (first three months) to predict the last month. This was how I was able to compare how well my following models did and used baseline model as my starting point.
+One of the first model I had made was a Naive Forecast Baseline Model which uses the last value of my training set (~70% of the data) to predict the last month. This was how I was able to compare how well my following models did and used baseline model as my starting point.
 
 #### PRE-COVID: Manhattan
 <img alt="naive_precod" src="./images/naive_precovid.png">
+
 ### RMSE score: 8276.79
 
 
 #### POST-COVID: Manhattan
+
 <img alt="naive_covid" src="./images/naive_covid.png">
+
 ### RMSE score: 649.1469
 
+
+### Best Model:
+#### PRE-COVID: Manhattan 
+
+#### POST-COVID: Manhattan
 
 
 

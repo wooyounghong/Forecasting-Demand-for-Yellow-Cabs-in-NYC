@@ -27,6 +27,7 @@ It consists of...
 - Resample the data so that it is in hourly interval
 - Increment count for each interval
 
+![ScreenShot](/images/distribution_boroughs_bar.png)
 <img src="./images/distribution_boroughs_bar.png">
 - Due to different boroughs, pre-lockdown and post-lockdown, for this project, I will forecast Manhattan for now as most of the riderships come from Manhattan. 
 

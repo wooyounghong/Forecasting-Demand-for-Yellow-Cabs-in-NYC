@@ -65,7 +65,7 @@ One of the first model I had made was a Naive Forecast Baseline Model which uses
 
 ### Best Model:
 #### PRE-COVID: Manhattan: 
-<img alt="naive_covid" src="./images/bestmodel.png">
+<img alt="naive_covid" src="./images/bestmodel.jpg">
 
 #### POST-COVID: Manhattan: 
 <img alt="fb_prophet" src="./images/fb_prophet_post.png">

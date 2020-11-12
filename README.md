@@ -50,7 +50,7 @@ I used RMSE as my metrics because RMSE tells me in unit number of how far the re
 
 ## Modeling
 ### Baseline Model:
-One of the first model I had made was a Naive Forecast Baseline Model which uses the last value of my training set (~70% of the data) to predict the last month. This was how I was able to compare how well my following models did and used baseline model as my starting point.
+One of the first model I had made was a Naive Forecast Baseline Model which uses the last value of my training set (~70% of the data in date) to predict the last month. This was how I was able to compare how well my following models did and used baseline model as my starting point.
 
 #### PRE-COVID: Manhattan 
 <img alt="naive_precod" src="./images/naive_precovid.png">
@@ -65,16 +65,18 @@ One of the first model I had made was a Naive Forecast Baseline Model which uses
 
 ### Best Model:
 #### PRE-COVID: Manhattan: 
-<img alt="naive_covid" src="./images/sarimax_best.png">
+<img alt="sarimax_precovid" src="./images/sarimax_best.png">
+- For the best model, I chose SARIMAX as the RMSE score was 806.24 with seasonal of 24 since there is there is daily seasonality.  
+- I used exogenous variables by extracting date into hour and dayofweek. From the summary, I saw that the coefficients were large and knew that the exogenous variables were signficiant. 
 
 #### POST-COVID: Manhattan: 
 <img alt="fb_prophet" src="./images/fb_prophet_post.png">
-Although the model with lowest RMSE was a SARIMAX model, I chose fbprophet to display because fbprophet captured the seasonal trend quickly and much faster than SARIMA or SARIMAX. The computation time for SARIMAX/SARIMA took way too long to process (hours). 
-
+- Although the model with lowest RMSE was a SARIMAX model, I chose fbprophet to display because fbprophet captured the seasonal trend quickly and much faster than SARIMA or SARIMAX. The computation time for SARIMAX/SARIMA took way too long to process (hours). 
+- Facebook Prophet model did really well from looking at the forecast since the forecast implies of an increase which makes sense as New York City enters into phase 3 in July. (Wish I had July but it isn't out yet)
 
 #### Recommendation:
 - Due to pandemic, taxi industry has fallen greatly. There should be support by government as the decline in the demand for taxi cabs was massive for them to survive during this pandemic. 
-- 
+- Yellow cab companies should make a phone app to tell them of a 'hot zone' or have every few taxis within separate blocks
 
 
 #### Next Steps:

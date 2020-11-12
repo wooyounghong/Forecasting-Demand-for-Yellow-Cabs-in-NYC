@@ -28,13 +28,13 @@ It consists of...
 - Resample the data so that it is in hourly interval
 - Increment count for each interval
 
-<img alt="boroughs dist" src="./images/distribution_boroughs_bar.png" max-width: 100%>
+<img alt="boroughs dist" src="./images/distribution_boroughs_bar.png" style=max-width: 100%>
 - Due to different boroughs, pre-lockdown and post-lockdown, for this project, I will forecast Manhattan for now as most of the riderships come from Manhattan. 
 
 ## Exploratory Data Analysis:
 
 #### Weekly Distribution (January):
-<img alt="boroughs dist" src="./images/weekly_distribution.png" max-width: 100%>
+<img alt="boroughs dist" src="./images/weekly_distribution.png" style=max-width: 100%>
 
 
 

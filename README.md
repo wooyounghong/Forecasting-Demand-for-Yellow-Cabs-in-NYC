@@ -22,6 +22,7 @@ It consists of...
 - Ranges from June 2019 to June 2020
 
 ## Data Cleaning:
+###### Due to how big my data was, I have used Microsoft Azure notebooks for this project. 
 - Separated the data by boroughs
 - Cleaned the wrong data such as mislabeled observations (wrong year and month)
 - Converted to datetime object and set as index
@@ -33,12 +34,30 @@ It consists of...
 
 - Due to different boroughs, pre-lockdown and post-lockdown, for this project, I will forecast Manhattan for now as most of the riderships come from Manhattan. 
 
-## Exploratory Data Analysis:
-
+## Exploratory Data Analysis: 
 #### Weekly Distribution (January):
-<img alt="boroughs dist" src="./images/weekly_distribution.png" width="1000">
+<img alt="boroughs dist" src="./images/weekly_distribution.png">
+- From the graph above, we can see that there is daily and weekly seasonality and will be noted in the models.
+
+#### Daily Distribution (Third Week of January):
+
+<img alt="boroughs dist" src="./images/january_daily.png" >
+- We can see that on weekdays the demand for taxi rides is highest around 7-10PM.   
+- We can also note that from 2AM to 4AM, the demand for taxi is lowest. 
 
 
+## Modeling
+### Baseline Model:
+One of the first model I had made was a Naive Forecast Baseline Model which uses the last value of my training set (first three months) to predict the last month. This was how I was able to compare how well my following models did and used baseline model as my starting point.
+
+#### PRE-COVID: Manhattan
+<img alt="naive_precod" src="./images/naive_precovid.png">
+### RMSE score: 8276.79
+
+
+#### POST-COVID: Manhattan
+<img alt="naive_covid" src="./images/naive_covid.png">
+### RMSE score: 649.1469
 
 
 
